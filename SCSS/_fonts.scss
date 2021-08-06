@@ -1,0 +1,29 @@
+$fontBody:'Yomogi', cursive;
+$FontSize: 25px;
+$SizeH1: 35px;
+$vista: mobile;
+
+/* GENERAL */
+.container-fluid {
+    font-family: $fontBody;
+    font-size: $FontSize;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: $SizeH1;
+    font-weight: bolder;
+}
+
+
+/* Contacto */ 
+.botones--weight {
+    font-weight: bolder;
+}
+@if $vista==mobile {
+    @media screen and (max-width: 767px){
+        li {
+            font-size: 25px;
+        }
+    }
+}
