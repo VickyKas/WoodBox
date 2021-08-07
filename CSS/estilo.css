@@ -26,20 +26,17 @@ h1 {
   li {
     margin-left: 5px;
     margin-right: 5px; }
-  .logo {
-    display: flex;
-    justify-content: center; }
+  /* LE IMPORTA 3 PEPINOS
+        .logo {
+            display: flex;
+            justify-content: center;
+        }*/
   .textarea--margin {
     display: grid; } }
 
 .ul__li--margen {
   margin-top: 15px; }
 
-/* LE IMPORTA 3 PEPINOS
-.ul__li--margen.logo {
-    display: flex;
-    justify-content: center;
-}*/
 .nav {
   display: flex;
   justify-content: space-around; }
