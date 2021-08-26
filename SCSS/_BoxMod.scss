@@ -14,29 +14,27 @@ $margin: 4*10px;
             margin-left: 5px;
             margin-right: 5px;
         }
-        /* LE IMPORTA 3 PEPINOS
-        .logo {
-            display: flex;
-            justify-content: center;
-        }*/
         .textarea--margin {
             display: grid;
         }
 
     }
 }
-
-.ul__li--margen {
-    margin-top: 15px;
+.nav li {
+    list-style: none;
+    margin-top: 25px;
 }
-
-.nav {
+.loguito {
+    width: 250px;
+}
+.nav--flex{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
 }
-ul li {
-    margin-top: 15*2px;
-}
+
 h1 {
     text-align: center;
     margin: {

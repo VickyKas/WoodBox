@@ -1,20 +1,27 @@
-$fontBody:'Yomogi', cursive;
+$fontBody:'Kodchasan', sans-serif;
 $FontSize: 25px;
-$SizeH1: 35px;
+$SizeH1: 30px;
 $vista: mobile;
 
 /* GENERAL */
 .container-fluid {
     font-family: $fontBody;
     font-size: $FontSize;
-    font-weight: bolder;
 }
 
 h1 {
     font-size: $SizeH1;
-    font-weight: bolder;
 }
 
+.pochoclo{
+    width: 250px;
+    height: auto;
+}
+html, .container-fluid{
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
 
 /* Contacto */ 
 .botones--weight {
@@ -22,8 +29,9 @@ h1 {
 }
 @if $vista==mobile {
     @media screen and (max-width: 767px){
-        li {
-            font-size: 25px;
+        li{
+            font-size: 16px;
         }
     }
 }
+

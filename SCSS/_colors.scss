@@ -5,16 +5,15 @@ html {
     width: 100%;
 } 
 }
-.nav a {
-    color: rgb(136, 100, 2);
-    font-weight: bolder;
+.nav li a {
+    color: rgb(214, 103, 12);
 }
 .ul__li--margen {
     background-color: rgb(224, 202, 139);
 }
 @if $vista==mobile {
     @media screen and (max-width:767px) {
-        h1 {color: rgb(45, 207, 45);}
+        h1 {color: rgb(37, 151, 37);}
         h3 {color:rgb(145, 20, 20)}
         .ul__li--margen {
             background-color: transparent;

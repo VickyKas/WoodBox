@@ -1,13 +1,20 @@
 @charset "UTF-8";
 /* GENERAL */
 .container-fluid {
-  font-family: "Yomogi", cursive;
-  font-size: 25px;
-  font-weight: bolder; }
+  font-family: "Kodchasan", sans-serif;
+  font-size: 25px; }
 
 h1 {
-  font-size: 35px;
-  font-weight: bolder; }
+  font-size: 30px; }
+
+.pochoclo {
+  width: 250px;
+  height: auto; }
+
+html, .container-fluid {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px; }
 
 /* Contacto */
 .botones--weight {
@@ -15,7 +22,7 @@ h1 {
 
 @media screen and (max-width: 767px) {
   li {
-    font-size: 25px; } }
+    font-size: 16px; } }
 
 @media screen and (max-width: 767px) {
   .container-fluid {
@@ -26,23 +33,26 @@ h1 {
   li {
     margin-left: 5px;
     margin-right: 5px; }
-  /* LE IMPORTA 3 PEPINOS
-        .logo {
-            display: flex;
-            justify-content: center;
-        }*/
   .textarea--margin {
     display: grid; } }
 
-.ul__li--margen {
-  margin-top: 15px; }
+.nav li {
+  list-style: none;
+  margin-top: 25px; }
 
-.nav {
+.loguito {
+  width: 250px; }
+
+.nav--flex {
+  width: 100%;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row; }
 
-ul li {
-  margin-top: 30px; }
+header {
+  position: sticky;
+  z-index: 2; }
 
 h1 {
   text-align: center;
@@ -127,15 +137,14 @@ html body {
   width: 100%; }
 
 .nav a {
-  color: #886402;
-  font-weight: bolder; }
+  color: #d6670c; }
 
 .ul__li--margen {
   background-color: #e0ca8b; }
 
 @media screen and (max-width: 767px) {
   h1 {
-    color: #2dcf2d; }
+    color: #259725; }
   h3 {
     color: #911414; }
   .ul__li--margen {
