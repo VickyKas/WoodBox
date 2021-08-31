@@ -1,0 +1,96 @@
+// HAMBURGUESA
+
+$width:30px;
+$height:4px;
+$menu-color:#fff;
+
+body{
+  margin: 0;
+}
+
+.top-bar{
+  background: #333;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.icon-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding-left: .4em;
+
+  &__bar{
+    background: $menu-color;
+    width: $width;
+    height: $height;
+    border-radius: $height / 2;
+    position: relative;
+
+    &::after, &::before{
+      content: "";
+      position: absolute;
+      display: block;
+      width: $width;
+      height: $height;
+      border-radius: $height/2;
+      background: $menu-color;
+      top: -10px;
+    }
+
+    &::after{
+      top: 10px;
+    }
+  }
+}
+
+.menu{
+  background: #333;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+  transform: translateX(-100%);
+  transition: transform .3s;
+  z-index: 1000;
+
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateX(0);
+  }
+
+  &--show{
+    transform: translateX(0);
+  }
+
+  &__item{
+    padding: 1em;
+    border-bottom: 3px solid #fff;
+
+    @media screen and (min-width: 768px) {
+      border-bottom: none;
+      text-transform: uppercase;
+
+      &:hover{
+        background: grey;
+
+        & a{
+          color: #000;
+        }
+      }
+    }
+  }
+
+  &__link{
+    color: $menu-color;
+    text-decoration: none;
+  }
+}

@@ -1,128 +1,126 @@
 $padding: 30px;
 $margin: 4*10px;
 
+
+
 @if $vista==mobile {
     @media screen and (max-width: 767px){
         .container-fluid{
             width: 100vw;
         }
-        .nav {
-            display: flex;
-            justify-content: space-between;
-        }
-        li {
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-        .textarea--margin {
-            display: grid;
-        }
-
-    }
 }
-.nav li {
-    list-style: none;
-    margin-top: 25px;
+// TITULOS 
+.titulo{
+    display:flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
-.loguito {
-    width: 250px;
-}
-.nav--flex{
-    width: 100%;
+// FOOTER
+.foo  {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
 }
-
-h1 {
-    text-align: center;
-    margin: {
-        bottom: 70px;
-        top: 70px;
-    } 
-}
-.parrafo--margen {
-    margin-bottom: 50px;
-    margin-left: $margin;
-}
-p {
-    margin-left: $margin;
-    margin: 25px;
-}
-section {
-    img {
-        height: 400px;
-    }
-}
-
-#carouselExampleFade {
-    margin: $margin;
-}
-.texto__reds {
-    justify-content: center;
-    margin-top: $margin;
-    margin-bottom: 20px;
-}
-
-.texto__reds {
-    h3 {
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    }
-}
-
-.redes{
-    display: flex;
-    justify-content: center;
-        img {
-            margin: 4px;
+.footer {
+    margin-top: 30px;
+        & h3 {
+            text-align: center;
         }
 }
-
-.ig:hover {
+.linksFoo ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.redes {
+    display: inline;
+    margin-right: -100px;
+    margin-top: 120px;
+}
+   
+.logo {
+    width: 50%;
+}
+.ig:hover{
     transform: translateY(-10px);
+}
+/* INICIO */
 
+.over {
+    overflow-y: hidden;
 }
-.whats:hover {
-    transform: translateY(-10px);
+.parraIndex{
+    text-align: left;
+    margin: 30px;
 }
-/* WOODBOX */
-
-.video--margen {
-    margin-top: 100-30px;
+.cjtas {
+    height: 300px;
+    width: 95%;
 }
-/* CONTACTO */ 
-.formulario--margin {
-    margin: $margin;
-}
-.textarea--margin {
-    margin: $margin;
-}
-input {
-    margin-bottom: 20px;
-}
-/* PRODUCTOS */
-.filaCards {
-    margin-left: 70px;
-    margin-top: 100px;
-}
-/* Ubicacion */
-.parrafUbic {
-    margin-top: 0px;
-}
-.mapa--tamaño {
-    height: 90%;
+.carcar {
+    display: flex;
+    margin-left: 30px;
 }
 .contenidoMB {
     margin-bottom: 100px;
-    margin-top: 100px;
-}
-.cjtas {
-    height: 85%;
-}
-.cardM {
-    margin-left: 90*2px;
+    margin-top: 30px;
 }
 
+.cardM {
+    margin-left: 90*2px;
+}}
+
+/* CONTACTO */
+
+.formulario--margin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      & input {
+        margin-bottom: 15px;
+      }
+  }
+  .textarea--margin{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 50%;
+    align-items: center;
+    margin-left: 325px;
+  }
+  .botones--weight{
+    display: flex;
+    margin: 20px;
+        & button{
+            margin: 15px;
+        }
+  }
+/* PRODUCTOS */
+
+.filaCards{
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+/* UBICACION */
+.parrafUbic {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.mapa--tamaño {
+    height: 90%;
+    margin-left: 50px;
+}
+.bus {
+    display: flex;
+    justify-content: center;
+}
+//WOODBOX
+
+.section {
+    text-align: justify;
+    margin: 55px;
+}
+.video--margen {
+    margin-left: 35px;
+}

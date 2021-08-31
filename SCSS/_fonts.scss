@@ -12,7 +12,9 @@ $vista: mobile;
 h1 {
     font-size: $SizeH1;
 }
-
+.titulo{
+    font-size: 35px;
+}
 .pochoclo{
     width: 250px;
     height: auto;
@@ -27,11 +29,5 @@ html, .container-fluid{
 .botones--weight {
     font-weight: bolder;
 }
-@if $vista==mobile {
-    @media screen and (max-width: 767px){
-        li{
-            font-size: 16px;
-        }
-    }
-}
+
 
