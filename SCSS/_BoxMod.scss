@@ -1,126 +1,171 @@
 $padding: 30px;
 $margin: 4*10px;
 
+    
+/*
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .titulo{
+        background: blue;
+    }
+}*/
+    /*.menu{
+        background: #333;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        list-style: none;   
+        transform: translateX(-100%);
+        transition: transform .3s;
+        z-index: 1000;
+    } */
+    // TITULOS 
+    
+@media screen and (min-width:768px) {
+    
+    .titulo{
+        color: rgb(29, 10, 80);
+        display:flex;
+        justify-content: center;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+    // FOOTER
 
+    .footer {
+        margin-top: 30px;
+        background: none;
+            & h3 {
+                text-align: center;
+            }
+    }
+    .linksFoo{
+        display: flex;
+        justify-content: center;
+        background: none;
+    }
+    .linksFoo ul li{
+        list-style: none;
+        text-decoration: none;
+    }
+    .redes {
+        display: inline;
+        margin-right: -100px;
+    }
 
-@if $vista==mobile {
-    @media screen and (max-width: 767px){
-        .container-fluid{
-            width: 100vw;
+    .logo {
+        width: 30%;
+    }
+
+    /* INICIO */
+
+    .parraIndex{
+        text-align: left;
+        margin: 30px;
+    }
+    .cjtas {
+        height: 300px;
+        width: 90%;
+        margin-right: 25px;
+    }
+    .carcar {
+        display: flex;
+        margin-left: 20px;
+    }
+    .contenidoMB {
+        margin-bottom: 100px;
+        margin-top: 30px;
+    }
+
+    .cardM {
+        margin-left: 90*2px;}
+    @media screen and (min-width: 768px){
+        .cardM{
+            margin-top: 0px;
+            margin-bottom: 50px;
+    }}
+
+    /* CONTACTO */
+
+    .formulario--margin{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & input {
+            margin-bottom: 15px;
         }
-}
-// TITULOS 
-.titulo{
-    display:flex;
-    justify-content: center;
-    margin-top: 70px;
-    margin-bottom: 100px;
-}
-// FOOTER
-.foo  {
-    display: flex;
-    justify-content: space-evenly;
-}
-.footer {
-    margin-top: 30px;
-        & h3 {
-            text-align: center;
-        }
-}
-.linksFoo ul li{
-    list-style: none;
-    text-decoration: none;
-}
-.redes {
-    display: inline;
-    margin-right: -100px;
-    margin-top: 120px;
-}
-   
-.logo {
-    width: 50%;
-}
-.ig:hover{
-    transform: translateY(-10px);
-}
-/* INICIO */
+    }
+    .textarea--margin{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        width: 50%;
+        align-items: center;
+        margin-left: 325px;
+    }
+    .botones--weight{
+        display: flex;
+        margin: 20px;
+            & button{
+                margin: 15px;
+            }
+    }
+    /* PRODUCTOS */
 
-.over {
-    overflow-y: hidden;
-}
-.parraIndex{
-    text-align: left;
-    margin: 30px;
-}
-.cjtas {
-    height: 300px;
-    width: 95%;
-}
-.carcar {
-    display: flex;
-    margin-left: 30px;
-}
-.contenidoMB {
-    margin-bottom: 100px;
-    margin-top: 30px;
+    .filaCards{
+        margin-bottom: 50px;
+        //margin-left: 80px;
+    }
+
+    /* UBICACION */
+    .parrafUbic {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .mapa--tamaño {
+        height: 90%;
+        margin-left: 50px;
+    }
+    .bus {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    //WOODBOX
+
+    .section {
+        text-align: justify;
+        margin: 55px;
+    }
+    .video--margen {
+        margin-left: 35px;
+    }
 }
 
-.cardM {
-    margin-left: 90*2px;
-}}
-
-/* CONTACTO */
-
-.formulario--margin{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-      & input {
-        margin-bottom: 15px;
-      }
-  }
-  .textarea--margin{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    width: 50%;
-    align-items: center;
-    margin-left: 325px;
-  }
-  .botones--weight{
-    display: flex;
-    margin: 20px;
-        & button{
-            margin: 15px;
-        }
-  }
-/* PRODUCTOS */
-
-.filaCards{
-    margin-bottom: 50px;
-    margin-left: 80px;
-}
-
-/* UBICACION */
-.parrafUbic {
-    text-align: center;
-    margin-top: 0px;
-}
-
-.mapa--tamaño {
-    height: 90%;
-    margin-left: 50px;
-}
-.bus {
-    display: flex;
-    justify-content: center;
-}
-//WOODBOX
-
-.section {
-    text-align: justify;
-    margin: 55px;
-}
-.video--margen {
-    margin-left: 35px;
-}
+    @media screen and (min-width: 768px){
+        .pepona{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        position: relative;
+        //background: #d3c3d0;
+            & .redes{
+                background: none;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                right: -50%;
+            }
+        .linksFoo{
+        display: flex;
+        flex-direction: column;
+        padding-left: 4rem;
+        border-top: none;
+    }
+    & h3{
+        text-align: end;
+        width: 350px;
+    }
+    }
+    }

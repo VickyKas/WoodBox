@@ -1,5 +1,7 @@
 
-@media screen and (min-width:0px) and (max-width:767px) {
+  .container-fluid{
+    width: 100vw;
+  }
   .menu{
     background: #333;
     padding-left: 0;
@@ -12,115 +14,116 @@
     z-index: 1000;
     position: absolute;
   }  
-// INICIO
-.titulo{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 40px;
-  color: green;
-  margin-bottom: 45px;
-}
-.contenidoMB{
-  text-align: center;
-}
-.over {
-  overflow: hidden;
-}
-.cardM {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-//CONTACTO
-.formulario--margin{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-    & input {
-      margin-bottom: 15px;
-    }
-}
-.textarea--margin{
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-.botones--weight{
-  display: flex;
-  justify-content:space-evenly;
-  margin: 10px;
-}
-//PRODUCTOS
-
-.filaCards{
-  display: flex;
-  justify-content: center;
-  text-align: -webkit-center;
-}
-.cartita {
-  margin: 15px;
-}
-//UBICACION
-.parrafUbic {
-  text-align: center;
-}
-.bus{
-  display: flex;
-  justify-content: center;
-}
-//WOODBOX
-.section {
-  text-align: center;
-  margin: 15px;
-}
-.video--margen {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-//FOOTER GENERAL
-&__reds{
-  display: flex;
-  justify-content: center;
-}
-.footer {
-  background: wheat;
-  margin-top: 25px;
-
-}
-.linksFoo ul li a{
-  list-style: none;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
-}
-.linksFoo {
-  text-align: center;
-  background: rgb(211, 195, 208);
-  border-top: 1px solid rgb(222, 165, 233);
-}
-.linksFoo ul {
-  padding-inline-start: inherit;
-  margin-bottom: 0;
-  border-bottom: 1px solid rgb(212, 182, 212);
+  // INICIO
+  .titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    color: green;
+    margin-bottom: 45px;
+  }
+  .contenidoMB{
+    text-align: center;
+  }
+  .carcar {
+    margin-top: 40px;
+  }
+  .over {
+    overflow: hidden;
+  }
   
-}
-.linksFoo ul li a {
-  list-style: none;
-  text-decoration: none;
-}
-.logo{
-  width: 60%;
-  margin-bottom: 10px;
-  margin-left: 5px;
-}
-.redes {
-  display: flex;
-  justify-content: start;
-  background: rgb(230, 212, 227);
-}
+  .cardM {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
 
-}
+  //CONTACTO
+  .formulario--margin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      & input {
+        margin-bottom: 15px;
+      }
+  }
+  .textarea--margin{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .botones--weight{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 10px;
+  }
+  //PRODUCTOS
+
+  .filaCards{
+    display: flex;
+    justify-content: center;
+    text-align: -webkit-center;
+  }
+  .cartita {
+    margin: 15px;
+  }
+  //UBICACION
+  .parrafUbic {
+    text-align: center;
+  }
+  .bus{
+    display: flex;
+    justify-content: center;
+  }
+  //WOODBOX
+  .section {
+    text-align: center;
+    margin: 15px;
+  }
+  .video--margen {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  //FOOTER GENERAL
+  /*&__redes{
+    display: flex;
+    justify-content: center;
+  }*/
+  .footer {
+    background: wheat;
+    margin-top: 25px;
+  }
+  .linksFoo ul li a{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+  }
+  .linksFoo {
+    text-align: center;
+    background: rgb(211, 195, 208);
+    border-top: 1px solid rgb(222, 165, 233);
+  }
+  .linksFoo ul {
+    padding-inline-start: inherit;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgb(212, 182, 212);
+    
+  }
+  .linksFoo ul li a {
+    list-style: none;
+    text-decoration: none;
+  }
+  .logo{
+    width: 60%;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  .redes {
+    display: flex;
+    justify-content: start;
+    background: rgb(230, 212, 227);
+  }
